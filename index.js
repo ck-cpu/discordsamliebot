@@ -10,7 +10,7 @@ client.on('message', async message => {
   if (message.content === '$샘플 시드라') {
   const embed = new Discord.MessageEmbed()
   .setTitle('현재 `시드라` 샘플은 2개 있어요!')
-  .setDescription('**$샘플 시드라 (번호)를 써주시면 볼 수 있습니다!**') 
+  .setDescription('**`$샘플 시드라 (번호)`를 써주시면 볼 수 있습니다!**') 
   .setColor('BLUE') 
   .setFooter(`EX) $샘플 시드라 1`)
   message.channel.send(embed)

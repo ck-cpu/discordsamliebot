@@ -81,7 +81,7 @@ client.on('message', async message => {
   if (message.content === '$샘플 폴리곤2 1') {
   const embed = new Discord.MessageEmbed()
   .setTitle('진화의휘석 폴리곤2 샘플 1')
-  .setDescription('**포켓몬**: 폴리곤\n**특성**: 다운로드\n**성격**: 조심\n**도구**: 진화의휘석\n**노력치**: H 252 | B 252\n**개체값: A, S 제외 4V**기술**: 10만볼트/트릭룸/트라이어택/사이코키네시스\n\n**추가 설명**: 폴리곤2 h, b만 넣어도 무릎차기 에 확2타 (생명의구슬 이어도)\n**같이 쓰면 좋은 포켓몬**: 차곡차곡') 
+  .setDescription('**포켓몬**: 폴리곤\n**특성**: 다운로드\n**성격**: 조심\n**도구**: 진화의휘석\n**노력치**: H 252 | B 252\n**개체값: A, S 제외 4V**\n기술**: 10만볼트/트릭룸/트라이어택/사이코키네시스\n\n**추가 설명**: 폴리곤2 h, b만 넣어도 무릎차기 에 확2타 (생명의구슬 이어도)\n**같이 쓰면 좋은 포켓몬**: 차곡차곡') 
   .setColor('#E3DDCB') 
   .setFooter(`샘플의 관한 질문은 질문 채널에서 해주시면 감사하겠습니다.`)
   embed.setImage('https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0233_000_uk_n_00000000_f_n.png')

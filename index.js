@@ -89,6 +89,29 @@ client.on('message', async message => {
   }
 })
 
+client.on('message', async message => {
+  if (message.content === '$샘플 가이오가') {
+  const embed = new Discord.MessageEmbed()
+  .setTitle('현재 `가이오가` 샘플은 1개 있어요!')
+  .setDescription('**$샘플 가이오가 (번호)를 써주시면 볼 수 있습니다!**') 
+  .setColor('BLUE') 
+  .setFooter(`EX) $샘플 시드라 1`)
+  message.channel.send(embed)
+  }
+}) 
+
+client.on('message', async message => {
+  if (message.content === '$샘플 가이오가 1') {
+  const embed = new Discord.MessageEmbed()
+  .setTitle('돌격조끼 가이오가 샘플 1')
+  .setDescription('**포켓몬**: 가이오가\n**특성**: 잔비\n**성격**: 겁쟁이\n**도구**: 돌격조끼\n**노력치**: C 252 | S 252 | B 6\n**개체값: A 제외 5V**\n**기술**: 해수스파우팅/눈보라/번개/원시의힘\n\n**추가 설명**: 선제 다이맥스를 전제로 하는 파티에서 사용되는 돌격조끼 가이오가입니다.\n가이오가를 대면에서 이길 수 있다고 생각하고 다이맥스하는 썬더나 이벨타르 등을 돌격조끼의 힘으로 이겨낼 수 있는 것이 특징입니다.\n눈보라는 냉동빔, 원시의힘은 파괴광선 등으로 바꿔도 됩니다.') 
+  .setColor('BLUE') 
+  .setFooter(`샘플의 관한 질문은 질문 채널에서 해주시면 감사하겠습니다.`)
+  embed.setImage('https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0382_000_uk_n_00000000_f_n.png')
+  message.channel.send(embed)
+  }
+})
+
 client.login(token);
 
 

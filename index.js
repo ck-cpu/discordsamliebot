@@ -138,7 +138,7 @@ client.on('message', async message => {
 client.on('message', async message => {
   if (message.content === '$속보') {
   const embed = new Discord.MessageEmbed()
-  .setTitle(':sokbo: 속보')
+  .setTitle('속보')
   .setDescription('[속보] 백신 접종후 사망 3명 추가 총 5명…당국 "백신 연관성 조사"') 
   .setColor('RED') 
   message.channel.send(embed)

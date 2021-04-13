@@ -186,7 +186,7 @@ client.on('message', async message => {
   if (message.content === '$제 1회 관리자투표 오후 12시 기준') {
   const embed = new Discord.MessageEmbed()
   .setTitle('제 1회 관리자투표')
-  .setDescription('후보 1: 충이 | 후보 2: 엔리코 푸치 | 후보 3: 이름없음 \n \n **투표는 쿠키 dm으로 "4번 후보", "00이요"로 투표하시길 바랍니다.** \n \n 현재 투표 현황 \n 충이: 33.3% (3표) \n 엔리코 푸치: 22.2% (2표) \n 이름없음: 44.4% (4표) \n \n 마지막 업데이트: 2021년 4월 13일 오후 1시') 
+  .setDescription('후보 1: 충이 | 후보 2: 엔리코 푸치 | 후보 3: 이름없음 \n \n **투표는 쿠키 dm으로 "4번 후보", "00이요"로 투표하시길 바랍니다.** \n \n 현재 투표 현황 \n 충이: 33.3% (3표) \n 엔리코 푸치: 22.2% (2표) \n 이름없음: 44.4% (4표) \n \n 마지막 업데이트: 2021년 4월 13일 오후 12시') 
   .setColor('BLACK') 
   .setFooter(`투표 시간: 4월 13일 오전 9시 ~ 4월 13일 오후 3시`)
   embed.setImage('https://media.discordapp.net/attachments/830794072502960158/831318435380068362/pokemon-go-shiny-900x506.jpg')

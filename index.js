@@ -7,6 +7,17 @@ client.on('ready', () => {
 });
 
 client.on('message', async message => {
+  if (message.content === '$샘플 목록') {
+  const embed = new Discord.MessageEmbed()
+  .setTitle('지금까지 샘플 봇에 등재 된 포켓몬이에요!')
+  .setDescription('**1세대**: 시드라, 암스타\n**2세대**: 폴리곤2\n**3세대**: 가이오가\n**4세대**: 없음\n **5세대**: 없음\n**6세대**: 없음\n**7세대**: 악식킹\n**8세대**: 없음') 
+  .setColor('#F8E77F') 
+  .setFooter(`샘플은 매일매일 업데이트 예정!`)
+  message.channel.send(embed)
+  }
+}) 
+
+client.on('message', async message => {
   if (message.content === '$샘플 시드라') {
   const embed = new Discord.MessageEmbed()
   .setTitle('현재 `시드라` 샘플은 2개 있어요!')

@@ -10,7 +10,18 @@ client.on('message', async message => {
   if (message.content === '$샘플 목록') {
   const embed = new Discord.MessageEmbed()
   .setTitle('지금까지 샘플 봇에 등재 된 포켓몬이에요!')
-  .setDescription('**1세대**: 시드라, 암스타\n**2세대**: 폴리곤2\n**3세대**: 가이오가\n**4세대**: 없음\n **5세대**: 없음\n**6세대**: 없음\n**7세대**: 악식킹\n**8세대**: 없음') 
+  .setDescription('**1세대**: 시드라, 암스타\n**2세대**: 폴리곤2\n**3세대**: 가이오가\n**4세대**: 없음\n **5세대**: 없음\n**6세대**: 없음\n**7세대**: 악식킹\n**8세대**: 없음')
+  .setColor('#F8E77F') 
+  .setFooter(`샘플은 매일매일 업데이트 예정!`)
+  message.channel.send(embed)
+  }
+}) 
+
+client.on('message', async message => {
+  if (message.content === '$샘플 도움') {
+  const embed = new Discord.MessageEmbed()
+  .setTitle('샘플 봇을 이용하는 방법이에요!')
+  .setDescription('먼저 $샘플 목록을 친 다음 원하는 포켓몬을 고르고, $샘플 (포켓몬 이름)을 칩니다. \n그리고 자신이 보고 싶은 번호에 따라 $샘플(포켓몬 이름) (번호)를 써주시면 됩니다!') 
   .setColor('#F8E77F') 
   .setFooter(`샘플은 매일매일 업데이트 예정!`)
   message.channel.send(embed)
@@ -21,7 +32,7 @@ client.on('message', async message => {
   if (message.content === '$샘플 시드라') {
   const embed = new Discord.MessageEmbed()
   .setTitle('현재 `시드라` 샘플은 2개 있어요!')
-  .setDescription('**$샘플 시드라 (번호)를 써주시면 볼 수 있습니다!**') 
+  .setDescription('**$샘플 시드라 (번호)를 써주시면 볼 수 있습니다!** \n1. 진화의휘석 시드라 1\n2. 진화의휘석 시드라 2') 
   .setColor('BLUE') 
   .setFooter(`EX) $샘플 이상해씨 1`)
   message.channel.send(embed)
@@ -58,7 +69,7 @@ client.on('message', async message => {
   if (message.content === '$샘플 악식킹') {
   const embed = new Discord.MessageEmbed()
   .setTitle('현재 `악식킹` 샘플은 1개 있어요!')
-  .setDescription('**$샘플 악식킹 (번호)를 써주시면 볼 수 있습니다!**') 
+  .setDescription('**$샘플 악식킹 (번호)를 써주시면 볼 수 있습니다!**\n1. 약점보험 악식킹') 
   .setColor('BLACK') 
   .setFooter(`EX) $샘플 이상해씨 1`)
   message.channel.send(embed)
@@ -81,7 +92,7 @@ client.on('message', async message => {
   if (message.content === '$샘플 폴리곤2') {
   const embed = new Discord.MessageEmbed()
   .setTitle('현재 `폴리곤2` 샘플은 1개 있어요!')
-  .setDescription('**$샘플 폴리곤2 (번호)를 써주시면 볼 수 있습니다!**') 
+  .setDescription('**$샘플 폴리곤2 (번호)를 써주시면 볼 수 있습니다!**\n1. 진화의휘석 폴리곤2') 
   .setColor('#E3DDCB') 
   .setFooter(`EX) $샘플 이상해씨 1`)
   message.channel.send(embed)
@@ -104,7 +115,7 @@ client.on('message', async message => {
   if (message.content === '$샘플 가이오가') {
   const embed = new Discord.MessageEmbed()
   .setTitle('현재 `가이오가` 샘플은 1개 있어요!')
-  .setDescription('**$샘플 가이오가 (번호)를 써주시면 볼 수 있습니다!**') 
+  .setDescription('**$샘플 가이오가 (번호)를 써주시면 볼 수 있습니다!**\n1. 돌격조끼 가이오가') 
   .setColor('BLUE') 
   .setFooter(`EX) $샘플 이상해씨 1`)
   message.channel.send(embed)
@@ -127,7 +138,7 @@ client.on('message', async message => {
   if (message.content === '$샘플 암스타') {
   const embed = new Discord.MessageEmbed()
   .setTitle('현재 `암스타` 샘플은 1개 있어요!')
-  .setDescription('**$샘플 암스타 (번호)를 써주시면 볼 수 있습니다!**') 
+  .setDescription('**$샘플 암스타 (번호)를 써주시면 볼 수 있습니다!**\n1. 먹다남은음식 암스타') 
   .setColor('BLUE') 
   .setFooter(`EX) $샘플 이상해씨 1`)
   message.channel.send(embed)

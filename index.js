@@ -152,7 +152,65 @@ client.on('message', async message => {
   .setDescription('**포켓몬**: 암스타\n**특성**: 잔비\n**성격**: 겁쟁이\n**도구**: 돌격조끼\n**노력치**: C 252 | S 252 | B 6\n**개체값**: A 제외 5V\n**기술**: 해수스파우팅/눈보라/번개/원시의힘\n\n**추가 설명**: 선제 다이맥스를 전제로 하는 파티에서 사용되는 돌격조끼 가이오가입니다.\n가이오가를 대면에서 이길 수 있다고 생각하고 다이맥스하는 썬더나 이벨타르 등을 돌격조끼의 힘으로 이겨낼 수 있는 것이 특징입니다.\n눈보라는 냉동빔, 원시의힘은 파괴광선 등으로 바꿔도 됩니다.') 
   .setColor('BLUE') 
   .setFooter(`샘플에 관한 질문은 질문 채널에서 해주시면 감사하겠습니다.`)
-  embed.setImage('https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0382_000_uk_n_00000000_f_n.png')
+  embed.setImage('https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0139_000_mf_n_00000000_f_n.png')
+  message.channel.send(embed)
+  }
+})
+
+client.on('message', async message => {
+  if (message.content === '$샘플 흥나숭') {
+  const embed = new Discord.MessageEmbed()
+  .setTitle('현재 `흥나숭` 샘플은 1개 있어요!')
+  .setDescription('**$샘플 흥나숭 (번호)를 써주시면 볼 수 있습니다!**\n1. 기합의띠 흥나숭') 
+  .setColor('GREEN') 
+  .setFooter(`EX) $샘플 이상해씨 1`)
+  message.channel.send(embed)
+  }
+}) 
+
+client.on('message', async message => {
+  if (message.content === '$샘플 흥나숭 1') {
+  const embed = new Discord.MessageEmbed()
+  .setTitle('기합의띠 흥나숭 샘플 1')
+  .setDescription('**포켓몬**: 흥나숭\n**특성**: 그래스메이커\n**성격**: 고집\n**도구**: 기합의띠\n**노력치**: A 252\n**개체값**: A 제외 5Z\n**기술**: 그래스슬라이더/탁쳐서떨구기/죽기살기/씨뿌리기\n\n**추가 설명**: 자시안 멈춰!') 
+  .setColor('GREEN') 
+  .setFooter(`샘플에 관한 질문은 질문 채널에서 해주시면 감사하겠습니다.`)
+  embed.setImage('https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0810_000_mf_n_00000000_f_n.png')
+  message.channel.send(embed)
+  }
+})
+
+client.on('message', async message => {
+  if (message.content === '$샘플 채키몽') {
+  const embed = new Discord.MessageEmbed()
+  .setTitle('현재 `채키몽` 샘플은 2개 있어요!')
+  .setDescription('**$샘플 채키몽 (번호)를 써주시면 볼 수 있습니다!**\n1. 진화의휘석 채키몽\n2. 구애머리띠 채키몽') 
+  .setColor('GREEN') 
+  .setFooter(`EX) $샘플 이상해씨 1`)
+  message.channel.send(embed)
+  }
+}) 
+
+client.on('message', async message => {
+  if (message.content === '$샘플 채키몽 1') {
+  const embed = new Discord.MessageEmbed()
+  .setTitle('진화의휘석 채키몽 샘플 1')
+  .setDescription('**포켓몬**: 채키몽\n**특성**: 그래스메이커\n**성격**: 고집\n**도구**: 진화의휘석\n**노력치**: H 252 | A 252\n**기술**: 그래스슬라이더/탁쳐서떨구기/방어/씨뿌리기\n\n**추가 설명**: 말해뭐해? 뇌빼고 그슬~') 
+  .setColor('GREEN') 
+  .setFooter(`샘플에 관한 질문은 질문 채널에서 해주시면 감사하겠습니다.`)
+  embed.setImage('https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0811_000_mf_n_00000000_f_n.png')
+  message.channel.send(embed)
+  }
+})
+
+client.on('message', async message => {
+  if (message.content === '$샘플 채키몽 2') {
+  const embed = new Discord.MessageEmbed()
+  .setTitle('구애머리띠 채키몽 샘플')
+  .setDescription('**포켓몬**: 채키몽\n**특성**: 그래스메이커\n**성격**: 고집\n**도구**: 구애머리띠\n**노력치**: A 252 | S 252\n**기술**: 그래스슬라이더/탁쳐서떨구기/유턴/우드해머\n\n**추가 설명**: 다맥 가이오가 우드해머 난수 1타 슨고 (상대 최속 아니면 50% 확률로 1타)  ') 
+  .setColor('GREEN') 
+  .setFooter(`샘플에 관한 질문은 질문 채널에서 해주시면 감사하겠습니다.`)
+  embed.setImage('https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0811_000_mf_n_00000000_f_n.png')
   message.channel.send(embed)
   }
 })

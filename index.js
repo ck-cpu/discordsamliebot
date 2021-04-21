@@ -206,7 +206,7 @@ client.on('message', async message => {
 client.on('message', async message => {
   if (message.content === '$샘플 채키몽 2') {
   const embed = new Discord.MessageEmbed()
-  .setTitle('구애머리띠 채키몽 샘플')
+  .setTitle('구애머리띠 채키몽 샘플 2')
   .setDescription('**포켓몬**: 채키몽\n**특성**: 그래스메이커\n**성격**: 고집\n**도구**: 구애머리띠\n**노력치**: A 252 | S 252\n**기술**: 그래스슬라이더/탁쳐서떨구기/유턴/우드해머\n\n**추가 설명**: 다맥 가이오가 우드해머 난수 1타 슨고 (상대 최속 아니면 50% 확률로 1타)  ') 
   .setColor('GREEN') 
   .setFooter(`샘플에 관한 질문은 질문 채널에서 해주시면 감사하겠습니다.`)

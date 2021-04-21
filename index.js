@@ -6,11 +6,12 @@ client.on('ready', () => {
   console.log('켰다.');
 });
 
+//샘플 안내/도움
 client.on('message', async message => {
   if (message.content === '$샘플 목록') {
   const embed = new Discord.MessageEmbed()
   .setTitle('지금까지 샘플 봇에 등재 된 포켓몬이에요!')
-  .setDescription('**1세대**: 시드라, 암스타\n**2세대**: 폴리곤2\n**3세대**: 가이오가\n**4세대**: 없음\n **5세대**: 없음\n**6세대**: 없음\n**7세대**: 악식킹\n**8세대**: 없음')
+  .setDescription('**1세대**: 시드라, 암스타\n**2세대**: 폴리곤2\n**3세대**: 가이오가\n**4세대**: 없음\n **5세대**: 없음\n**6세대**: 없음\n**7세대**: 악식킹\n**8세대**: 흥나숭, 채키몽')
   .setColor('#F8E77F') 
   .setFooter(`샘플은 매일매일 업데이트 예정!`)
   message.channel.send(embed)
@@ -21,12 +22,14 @@ client.on('message', async message => {
   if (message.content === '$샘플 도움') {
   const embed = new Discord.MessageEmbed()
   .setTitle('샘플 봇을 이용하는 방법이에요!')
-  .setDescription('먼저 $샘플 목록을 친 다음 원하는 포켓몬을 고르고, $샘플 (포켓몬 이름)을 칩니다. \n그리고 자신이 보고 싶은 번호에 따라 $샘플(포켓몬 이름) (번호)를 써주시면 됩니다!') 
+  .setDescription('먼저 $샘플 목록을 친 다음 원하는 포켓몬을 고르고, $샘플 (포켓몬 이름)을 칩니다. \n그리고 자신이 보고 싶은 번호에 따라 $샘플 (포켓몬 이름) (번호)를 써주시면 됩니다!') 
   .setColor('#F8E77F') 
   .setFooter(`샘플은 매일매일 업데이트 예정!`)
   message.channel.send(embed)
   }
 }) 
+
+//샘플 1세대
 
 client.on('message', async message => {
   if (message.content === '$샘플 시드라') {
@@ -66,27 +69,29 @@ client.on('message', async message => {
 }) 
 
 client.on('message', async message => {
-  if (message.content === '$샘플 악식킹') {
+  if (message.content === '$샘플 암스타') {
   const embed = new Discord.MessageEmbed()
-  .setTitle('현재 `악식킹` 샘플은 1개 있어요!')
-  .setDescription('**$샘플 악식킹 (번호)를 써주시면 볼 수 있습니다!**\n1. 약점보험 악식킹') 
-  .setColor('BLACK') 
+  .setTitle('현재 `암스타` 샘플은 1개 있어요!')
+  .setDescription('**$샘플 암스타 (번호)를 써주시면 볼 수 있습니다!**\n1. 먹다남은음식 암스타') 
+  .setColor('BLUE') 
   .setFooter(`EX) $샘플 이상해씨 1`)
   message.channel.send(embed)
   }
 }) 
 
 client.on('message', async message => {
-  if (message.content === '$샘플 악식킹 1') {
+  if (message.content === '$샘플 암스타 1') {
   const embed = new Discord.MessageEmbed()
-  .setTitle('약점보험 악식킹 샘플 1')
-  .setDescription('**포켓몬**: 악식킹\n**특성**: 비스트부스트\n**성격**: 냉정\n**도구**: 약점보험\n**노력치**: B 252 | D 252 | H 6\n**기술**: 악의파동/용성군/불대문자/오물폭탄 또는 오물웨이브\n\n**추가 설명**: 이렇게 내구 넣으면 물리내구 7만 6천 특수내구 7만 6천입니다.\n다맥하면 따라큐 치근거리기 버팀\n그리고 트릭룸 요원 꼭 필요합니다.') 
-  .setColor('BLACK') 
+  .setTitle('먹다남은음식 암스타 샘플 1')
+  .setDescription('**포켓몬**: 암스타\n**특성**: 잔비\n**성격**: 겁쟁이\n**도구**: 먹다남은음식\n**노력치**: C 252 | S 252 | B 6\n**개체값**: A 제외 5V\n**기술**: 해수스파우팅/눈보라/번개/원시의힘\n\n**추가 설명**: 선제 다이맥스를 전제로 하는 파티에서 사용되는 돌격조끼 가이오가입니다.\n가이오가를 대면에서 이길 수 있다고 생각하고 다이맥스하는 썬더나 이벨타르 등을 돌격조끼의 힘으로 이겨낼 수 있는 것이 특징입니다.\n눈보라는 냉동빔, 원시의힘은 파괴광선 등으로 바꿔도 됩니다.') 
+  .setColor('BLUE') 
   .setFooter(`샘플에 관한 질문은 질문 채널에서 해주시면 감사하겠습니다.`)
-  embed.setImage('https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0799_000_uk_n_00000000_f_n.png')
+  embed.setImage('https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0139_000_mf_n_00000000_f_n.png')
   message.channel.send(embed)
   }
 })
+
+//샘플 2세대
 
 client.on('message', async message => {
   if (message.content === '$샘플 폴리곤2') {
@@ -111,6 +116,8 @@ client.on('message', async message => {
   }
 })
 
+//샘플 3세대
+
 client.on('message', async message => {
   if (message.content === '$샘플 가이오가') {
   const embed = new Discord.MessageEmbed()
@@ -134,28 +141,38 @@ client.on('message', async message => {
   }
 })
 
+//샘플 4세대
+
+//샘플 5세대
+
+//샘플 6세대
+
+//샘플 7세대
+
 client.on('message', async message => {
-  if (message.content === '$샘플 암스타') {
+  if (message.content === '$샘플 악식킹') {
   const embed = new Discord.MessageEmbed()
-  .setTitle('현재 `암스타` 샘플은 1개 있어요!')
-  .setDescription('**$샘플 암스타 (번호)를 써주시면 볼 수 있습니다!**\n1. 먹다남은음식 암스타') 
-  .setColor('BLUE') 
+  .setTitle('현재 `악식킹` 샘플은 1개 있어요!')
+  .setDescription('**$샘플 악식킹 (번호)를 써주시면 볼 수 있습니다!**\n1. 약점보험 악식킹') 
+  .setColor('BLACK') 
   .setFooter(`EX) $샘플 이상해씨 1`)
   message.channel.send(embed)
   }
 }) 
 
 client.on('message', async message => {
-  if (message.content === '$샘플 암스타 1') {
+  if (message.content === '$샘플 악식킹 1') {
   const embed = new Discord.MessageEmbed()
-  .setTitle('먹다남은음식 암스타 샘플 1')
-  .setDescription('**포켓몬**: 암스타\n**특성**: 잔비\n**성격**: 겁쟁이\n**도구**: 먹다남은음식\n**노력치**: C 252 | S 252 | B 6\n**개체값**: A 제외 5V\n**기술**: 해수스파우팅/눈보라/번개/원시의힘\n\n**추가 설명**: 선제 다이맥스를 전제로 하는 파티에서 사용되는 돌격조끼 가이오가입니다.\n가이오가를 대면에서 이길 수 있다고 생각하고 다이맥스하는 썬더나 이벨타르 등을 돌격조끼의 힘으로 이겨낼 수 있는 것이 특징입니다.\n눈보라는 냉동빔, 원시의힘은 파괴광선 등으로 바꿔도 됩니다.') 
-  .setColor('BLUE') 
+  .setTitle('약점보험 악식킹 샘플 1')
+  .setDescription('**포켓몬**: 악식킹\n**특성**: 비스트부스트\n**성격**: 냉정\n**도구**: 약점보험\n**노력치**: B 252 | D 252 | H 6\n**기술**: 악의파동/용성군/불대문자/오물폭탄 또는 오물웨이브\n\n**추가 설명**: 이렇게 내구 넣으면 물리내구 7만 6천 특수내구 7만 6천입니다.\n다맥하면 따라큐 치근거리기 버팀\n그리고 트릭룸 요원 꼭 필요합니다.') 
+  .setColor('BLACK') 
   .setFooter(`샘플에 관한 질문은 질문 채널에서 해주시면 감사하겠습니다.`)
-  embed.setImage('https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0139_000_mf_n_00000000_f_n.png')
+  embed.setImage('https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0799_000_uk_n_00000000_f_n.png')
   message.channel.send(embed)
   }
 })
+
+//샘플 8세대
 
 client.on('message', async message => {
   if (message.content === '$샘플 흥나숭') {
